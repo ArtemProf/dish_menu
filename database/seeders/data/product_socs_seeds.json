@@ -1,0 +1,5 @@
+[
+    {"id":1, "title": "вода", "soc_standard": "мл.", "transformers": [
+        {"soc_origin": "ст. л.", "coefficient": 16.66, "coefficient_calc": "50/3"}
+    ]}
+]

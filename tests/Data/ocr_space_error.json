@@ -1,0 +1,806 @@
+{
+    "ParsedResults": [
+        {
+            "TextOverlay": {
+                "Lines": [
+                    {
+                        "LineText": "Перекус/десерт",
+                        "Words": [
+                            {
+                                "WordText": "Перекус/десерт",
+                                "Left": 108.0,
+                                "Top": 62.0,
+                                "Height": 74.0,
+                                "Width": 511.0
+                            }
+                        ],
+                        "MaxHeight": 74.0,
+                        "MinTop": 62.0
+                    },
+                    {
+                        "LineText": "Ингредиенты:",
+                        "Words": [
+                            {
+                                "WordText": "Ингредиенты:",
+                                "Left": 102.0,
+                                "Top": 182.0,
+                                "Height": 21.5,
+                                "Width": 113.0
+                            }
+                        ],
+                        "MaxHeight": 21.5,
+                        "MinTop": 182.0
+                    },
+                    {
+                        "LineText": "для пудинд",
+                        "Words": [
+                            {
+                                "WordText": "для",
+                                "Left": 99.0,
+                                "Top": 241.0,
+                                "Height": 19.0,
+                                "Width": 32.0
+                            },
+                            {
+                                "WordText": "пудинд",
+                                "Left": 136.0,
+                                "Top": 247.0,
+                                "Height": 16.0,
+                                "Width": 69.0
+                            }
+                        ],
+                        "MaxHeight": 19.0,
+                        "MinTop": 241.0
+                    },
+                    {
+                        "LineText": "160 г миндального молока",
+                        "Words": [
+                            {
+                                "WordText": "160",
+                                "Left": 100.0,
+                                "Top": 270.0,
+                                "Height": 17.0,
+                                "Width": 28.0
+                            },
+                            {
+                                "WordText": "г",
+                                "Left": 134.0,
+                                "Top": 275.0,
+                                "Height": 12.0,
+                                "Width": 6.0
+                            },
+                            {
+                                "WordText": "миндального",
+                                "Left": 145.0,
+                                "Top": 276.0,
+                                "Height": 14.0,
+                                "Width": 107.0
+                            },
+                            {
+                                "WordText": "молока",
+                                "Left": 258.0,
+                                "Top": 278.0,
+                                "Height": 12.0,
+                                "Width": 60.0
+                            }
+                        ],
+                        "MaxHeight": 17.0,
+                        "MinTop": 270.0
+                    },
+                    {
+                        "LineText": "160 г кокосового молока",
+                        "Words": [
+                            {
+                                "WordText": "160",
+                                "Left": 99.0,
+                                "Top": 300.0,
+                                "Height": 16.0,
+                                "Width": 28.0
+                            },
+                            {
+                                "WordText": "г",
+                                "Left": 133.0,
+                                "Top": 305.0,
+                                "Height": 11.0,
+                                "Width": 7.0
+                            },
+                            {
+                                "WordText": "кокосового",
+                                "Left": 145.0,
+                                "Top": 305.0,
+                                "Height": 13.0,
+                                "Width": 96.0
+                            },
+                            {
+                                "WordText": "молока",
+                                "Left": 247.0,
+                                "Top": 307.0,
+                                "Height": 12.0,
+                                "Width": 60.0
+                            }
+                        ],
+                        "MaxHeight": 16.0,
+                        "MinTop": 300.0
+                    },
+                    {
+                        "LineText": "40 г семян чиа",
+                        "Words": [
+                            {
+                                "WordText": "40",
+                                "Left": 99.0,
+                                "Top": 329.0,
+                                "Height": 16.0,
+                                "Width": 20.0
+                            },
+                            {
+                                "WordText": "г",
+                                "Left": 125.0,
+                                "Top": 334.0,
+                                "Height": 11.0,
+                                "Width": 7.0
+                            },
+                            {
+                                "WordText": "семян",
+                                "Left": 137.0,
+                                "Top": 334.0,
+                                "Height": 12.0,
+                                "Width": 50.0
+                            },
+                            {
+                                "WordText": "чиа",
+                                "Left": 192.0,
+                                "Top": 336.0,
+                                "Height": 11.0,
+                                "Width": 28.0
+                            }
+                        ],
+                        "MaxHeight": 16.0,
+                        "MinTop": 329.0
+                    },
+                    {
+                        "LineText": "Для кдубничного соуса:",
+                        "Words": [
+                            {
+                                "WordText": "Для",
+                                "Left": 97.0,
+                                "Top": 388.0,
+                                "Height": 18.0,
+                                "Width": 31.0
+                            },
+                            {
+                                "WordText": "кдубничного",
+                                "Left": 135.0,
+                                "Top": 389.0,
+                                "Height": 20.0,
+                                "Width": 105.0
+                            },
+                            {
+                                "WordText": "соуса:",
+                                "Left": 245.0,
+                                "Top": 395.0,
+                                "Height": 16.0,
+                                "Width": 52.0
+                            }
+                        ],
+                        "MaxHeight": 20.0,
+                        "MinTop": 388.0
+                    },
+                    {
+                        "LineText": "100 г свежемороженой",
+                        "Words": [
+                            {
+                                "WordText": "100",
+                                "Left": 97.0,
+                                "Top": 417.0,
+                                "Height": 16.0,
+                                "Width": 30.0
+                            },
+                            {
+                                "WordText": "г",
+                                "Left": 133.0,
+                                "Top": 422.0,
+                                "Height": 11.0,
+                                "Width": 7.0
+                            },
+                            {
+                                "WordText": "свежемороженой",
+                                "Left": 144.0,
+                                "Top": 420.0,
+                                "Height": 20.0,
+                                "Width": 147.0
+                            }
+                        ],
+                        "MaxHeight": 20.0,
+                        "MinTop": 417.0
+                    },
+                    {
+                        "LineText": "клубники",
+                        "Words": [
+                            {
+                                "WordText": "клубники",
+                                "Left": 97.0,
+                                "Top": 440.0,
+                                "Height": 21.0,
+                                "Width": 78.0
+                            }
+                        ],
+                        "MaxHeight": 21.0,
+                        "MinTop": 440.0
+                    },
+                    {
+                        "LineText": "5 г мяты",
+                        "Words": [
+                            {
+                                "WordText": "5",
+                                "Left": 97.0,
+                                "Top": 469.0,
+                                "Height": 16.0,
+                                "Width": 9.0
+                            },
+                            {
+                                "WordText": "г",
+                                "Left": 112.0,
+                                "Top": 474.0,
+                                "Height": 10.0,
+                                "Width": 7.0
+                            },
+                            {
+                                "WordText": "мяты",
+                                "Left": 124.0,
+                                "Top": 474.0,
+                                "Height": 12.0,
+                                "Width": 40.0
+                            }
+                        ],
+                        "MaxHeight": 16.0,
+                        "MinTop": 469.0
+                    },
+                    {
+                        "LineText": "15 г сиропа топинамбура",
+                        "Words": [
+                            {
+                                "WordText": "15",
+                                "Left": 96.0,
+                                "Top": 498.0,
+                                "Height": 16.0,
+                                "Width": 17.0
+                            },
+                            {
+                                "WordText": "г",
+                                "Left": 119.0,
+                                "Top": 503.0,
+                                "Height": 11.0,
+                                "Width": 7.0
+                            },
+                            {
+                                "WordText": "сиропа",
+                                "Left": 130.0,
+                                "Top": 503.0,
+                                "Height": 16.0,
+                                "Width": 61.0
+                            },
+                            {
+                                "WordText": "топинамбура",
+                                "Left": 196.0,
+                                "Top": 500.0,
+                                "Height": 21.0,
+                                "Width": 108.0
+                            }
+                        ],
+                        "MaxHeight": 21.0,
+                        "MinTop": 498.0
+                    },
+                    {
+                        "LineText": "РВЦИОН УСЛОВИЯ",
+                        "Words": [
+                            {
+                                "WordText": "РВЦИОН",
+                                "Left": 51.0,
+                                "Top": 1235.0,
+                                "Height": 13.0,
+                                "Width": 48.0
+                            },
+                            {
+                                "WordText": "УСЛОВИЯ",
+                                "Left": 176.0,
+                                "Top": 1235.0,
+                                "Height": 13.0,
+                                "Width": 52.0
+                            }
+                        ],
+                        "MaxHeight": 13.0,
+                        "MinTop": 1235.0
+                    },
+                    {
+                        "LineText": "Чиа-пудинг с ягодами",
+                        "Words": [
+                            {
+                                "WordText": "Чиа-пудинг",
+                                "Left": 386.0,
+                                "Top": 188.0,
+                                "Height": 26.0,
+                                "Width": 137.0
+                            },
+                            {
+                                "WordText": "с",
+                                "Left": 529.0,
+                                "Top": 194.0,
+                                "Height": 15.0,
+                                "Width": 11.0
+                            },
+                            {
+                                "WordText": "ягодами",
+                                "Left": 546.0,
+                                "Top": 194.0,
+                                "Height": 17.0,
+                                "Width": 101.0
+                            }
+                        ],
+                        "MaxHeight": 26.0,
+                        "MinTop": 188.0
+                    },
+                    {
+                        "LineText": "Смешать оба вида молока и добавить семена чиа. Пере-",
+                        "Words": [
+                            {
+                                "WordText": "Смешать",
+                                "Left": 385.0,
+                                "Top": 250.0,
+                                "Height": 16.0,
+                                "Width": 77.0
+                            },
+                            {
+                                "WordText": "оба",
+                                "Left": 468.0,
+                                "Top": 251.0,
+                                "Height": 15.0,
+                                "Width": 30.0
+                            },
+                            {
+                                "WordText": "вида",
+                                "Left": 506.0,
+                                "Top": 255.0,
+                                "Height": 14.0,
+                                "Width": 40.0
+                            },
+                            {
+                                "WordText": "молока",
+                                "Left": 554.0,
+                                "Top": 255.0,
+                                "Height": 11.0,
+                                "Width": 63.0
+                            },
+                            {
+                                "WordText": "и",
+                                "Left": 625.0,
+                                "Top": 255.0,
+                                "Height": 11.0,
+                                "Width": 9.0
+                            },
+                            {
+                                "WordText": "добавить",
+                                "Left": 640.0,
+                                "Top": 250.0,
+                                "Height": 18.0,
+                                "Width": 83.0
+                            },
+                            {
+                                "WordText": "семена",
+                                "Left": 729.0,
+                                "Top": 255.0,
+                                "Height": 12.0,
+                                "Width": 62.0
+                            },
+                            {
+                                "WordText": "чиа.",
+                                "Left": 798.0,
+                                "Top": 257.0,
+                                "Height": 12.0,
+                                "Width": 34.0
+                            },
+                            {
+                                "WordText": "Пере-",
+                                "Left": 837.0,
+                                "Top": 254.0,
+                                "Height": 21.0,
+                                "Width": 49.0
+                            }
+                        ],
+                        "MaxHeight": 21.0,
+                        "MinTop": 250.0
+                    },
+                    {
+                        "LineText": "мешивать около 5 минут. Затем дать настояться около часа",
+                        "Words": [
+                            {
+                                "WordText": "мешивать",
+                                "Left": 385.0,
+                                "Top": 279.0,
+                                "Height": 12.0,
+                                "Width": 87.0
+                            },
+                            {
+                                "WordText": "около",
+                                "Left": 477.0,
+                                "Top": 280.0,
+                                "Height": 12.0,
+                                "Width": 51.0
+                            },
+                            {
+                                "WordText": "5",
+                                "Left": 536.0,
+                                "Top": 276.0,
+                                "Height": 16.0,
+                                "Width": 8.0
+                            },
+                            {
+                                "WordText": "минут.",
+                                "Left": 552.0,
+                                "Top": 280.0,
+                                "Height": 15.0,
+                                "Width": 55.0
+                            },
+                            {
+                                "WordText": "Затем",
+                                "Left": 612.0,
+                                "Top": 275.0,
+                                "Height": 16.0,
+                                "Width": 51.0
+                            },
+                            {
+                                "WordText": "дать",
+                                "Left": 669.0,
+                                "Top": 280.0,
+                                "Height": 14.0,
+                                "Width": 39.0
+                            },
+                            {
+                                "WordText": "настояться",
+                                "Left": 715.0,
+                                "Top": 280.0,
+                                "Height": 13.0,
+                                "Width": 93.0
+                            },
+                            {
+                                "WordText": "около",
+                                "Left": 814.0,
+                                "Top": 282.0,
+                                "Height": 14.0,
+                                "Width": 50.0
+                            },
+                            {
+                                "WordText": "часа",
+                                "Left": 870.0,
+                                "Top": 285.0,
+                                "Height": 14.0,
+                                "Width": 35.0
+                            }
+                        ],
+                        "MaxHeight": 16.0,
+                        "MinTop": 275.0
+                    },
+                    {
+                        "LineText": "в холодильнике.",
+                        "Words": [
+                            {
+                                "WordText": "в",
+                                "Left": 385.0,
+                                "Top": 304.0,
+                                "Height": 12.0,
+                                "Width": 8.0
+                            },
+                            {
+                                "WordText": "холодильнике.",
+                                "Left": 400.0,
+                                "Top": 304.0,
+                                "Height": 15.0,
+                                "Width": 129.0
+                            }
+                        ],
+                        "MaxHeight": 15.0,
+                        "MinTop": 304.0
+                    },
+                    {
+                        "LineText": "Клубнику выложить в чашу блендера, добавить мяту и си-",
+                        "Words": [
+                            {
+                                "WordText": "Клубнику",
+                                "Left": 384.0,
+                                "Top": 345.0,
+                                "Height": 20.0,
+                                "Width": 84.0
+                            },
+                            {
+                                "WordText": "выложить",
+                                "Left": 474.0,
+                                "Top": 349.0,
+                                "Height": 12.0,
+                                "Width": 85.0
+                            },
+                            {
+                                "WordText": "в",
+                                "Left": 565.0,
+                                "Top": 349.0,
+                                "Height": 12.0,
+                                "Width": 9.0
+                            },
+                            {
+                                "WordText": "чашу",
+                                "Left": 581.0,
+                                "Top": 349.0,
+                                "Height": 16.0,
+                                "Width": 44.0
+                            },
+                            {
+                                "WordText": "блендера,",
+                                "Left": 630.0,
+                                "Top": 345.0,
+                                "Height": 20.0,
+                                "Width": 90.0
+                            },
+                            {
+                                "WordText": "добавить",
+                                "Left": 724.0,
+                                "Top": 346.0,
+                                "Height": 18.0,
+                                "Width": 82.0
+                            },
+                            {
+                                "WordText": "мяту",
+                                "Left": 812.0,
+                                "Top": 352.0,
+                                "Height": 16.0,
+                                "Width": 38.0
+                            },
+                            {
+                                "WordText": "и",
+                                "Left": 856.0,
+                                "Top": 354.0,
+                                "Height": 11.0,
+                                "Width": 8.0
+                            },
+                            {
+                                "WordText": "си-",
+                                "Left": 871.0,
+                                "Top": 354.0,
+                                "Height": 12.0,
+                                "Width": 24.0
+                            }
+                        ],
+                        "MaxHeight": 20.0,
+                        "MinTop": 345.0
+                    },
+                    {
+                        "LineText": "роп и взбить до однородности. Можно брать разные ягоды.",
+                        "Words": [
+                            {
+                                "WordText": "роп",
+                                "Left": 384.0,
+                                "Top": 374.0,
+                                "Height": 15.0,
+                                "Width": 31.0
+                            },
+                            {
+                                "WordText": "и",
+                                "Left": 422.0,
+                                "Top": 375.0,
+                                "Height": 11.0,
+                                "Width": 10.0
+                            },
+                            {
+                                "WordText": "взбить",
+                                "Left": 439.0,
+                                "Top": 370.0,
+                                "Height": 16.0,
+                                "Width": 57.0
+                            },
+                            {
+                                "WordText": "до",
+                                "Left": 501.0,
+                                "Top": 375.0,
+                                "Height": 14.0,
+                                "Width": 22.0
+                            },
+                            {
+                                "WordText": "однородности.",
+                                "Left": 529.0,
+                                "Top": 375.0,
+                                "Height": 15.0,
+                                "Width": 131.0
+                            },
+                            {
+                                "WordText": "Можно",
+                                "Left": 666.0,
+                                "Top": 371.0,
+                                "Height": 16.0,
+                                "Width": 61.0
+                            },
+                            {
+                                "WordText": "брать",
+                                "Left": 734.0,
+                                "Top": 371.0,
+                                "Height": 20.0,
+                                "Width": 49.0
+                            },
+                            {
+                                "WordText": "разные",
+                                "Left": 789.0,
+                                "Top": 376.0,
+                                "Height": 16.0,
+                                "Width": 62.0
+                            },
+                            {
+                                "WordText": "ягоды.",
+                                "Left": 857.0,
+                                "Top": 378.0,
+                                "Height": 16.0,
+                                "Width": 51.0
+                            }
+                        ],
+                        "MaxHeight": 20.0,
+                        "MinTop": 370.0
+                    },
+                    {
+                        "LineText": "В креманку, банку или стакан выложить клубничный мусс.",
+                        "Words": [
+                            {
+                                "WordText": "В",
+                                "Left": 384.0,
+                                "Top": 415.0,
+                                "Height": 15.0,
+                                "Width": 9.0
+                            },
+                            {
+                                "WordText": "креманку,",
+                                "Left": 401.0,
+                                "Top": 419.0,
+                                "Height": 15.0,
+                                "Width": 86.0
+                            },
+                            {
+                                "WordText": "банку",
+                                "Left": 492.0,
+                                "Top": 415.0,
+                                "Height": 20.0,
+                                "Width": 51.0
+                            },
+                            {
+                                "WordText": "или",
+                                "Left": 549.0,
+                                "Top": 419.0,
+                                "Height": 12.0,
+                                "Width": 30.0
+                            },
+                            {
+                                "WordText": "стакан",
+                                "Left": 586.0,
+                                "Top": 419.0,
+                                "Height": 12.0,
+                                "Width": 57.0
+                            },
+                            {
+                                "WordText": "выложить",
+                                "Left": 650.0,
+                                "Top": 419.0,
+                                "Height": 12.0,
+                                "Width": 87.0
+                            },
+                            {
+                                "WordText": "клубничный",
+                                "Left": 743.0,
+                                "Top": 416.0,
+                                "Height": 20.0,
+                                "Width": 105.0
+                            },
+                            {
+                                "WordText": "мусс.",
+                                "Left": 855.0,
+                                "Top": 423.0,
+                                "Height": 16.0,
+                                "Width": 41.0
+                            }
+                        ],
+                        "MaxHeight": 20.0,
+                        "MinTop": 415.0
+                    },
+                    {
+                        "LineText": "Следом выложить пудинг.",
+                        "Words": [
+                            {
+                                "WordText": "Следом",
+                                "Left": 383.0,
+                                "Top": 458.0,
+                                "Height": 19.0,
+                                "Width": 64.0
+                            },
+                            {
+                                "WordText": "выложить",
+                                "Left": 455.0,
+                                "Top": 463.0,
+                                "Height": 12.0,
+                                "Width": 85.0
+                            },
+                            {
+                                "WordText": "пудинг.",
+                                "Left": 546.0,
+                                "Top": 464.0,
+                                "Height": 15.0,
+                                "Width": 62.0
+                            }
+                        ],
+                        "MaxHeight": 19.0,
+                        "MinTop": 458.0
+                    },
+                    {
+                        "LineText": "Можно украсить ягодами или фруктами по желанию,",
+                        "Words": [
+                            {
+                                "WordText": "Можно",
+                                "Left": 382.0,
+                                "Top": 503.0,
+                                "Height": 16.0,
+                                "Width": 61.0
+                            },
+                            {
+                                "WordText": "украсить",
+                                "Left": 449.0,
+                                "Top": 508.0,
+                                "Height": 15.0,
+                                "Width": 77.0
+                            },
+                            {
+                                "WordText": "ягодами",
+                                "Left": 532.0,
+                                "Top": 508.0,
+                                "Height": 14.0,
+                                "Width": 72.0
+                            },
+                            {
+                                "WordText": "или",
+                                "Left": 611.0,
+                                "Top": 509.0,
+                                "Height": 11.0,
+                                "Width": 31.0
+                            },
+                            {
+                                "WordText": "фруктами",
+                                "Left": 649.0,
+                                "Top": 504.0,
+                                "Height": 20.0,
+                                "Width": 86.0
+                            },
+                            {
+                                "WordText": "по",
+                                "Left": 743.0,
+                                "Top": 509.0,
+                                "Height": 12.0,
+                                "Width": 20.0
+                            },
+                            {
+                                "WordText": "желанию,",
+                                "Left": 769.0,
+                                "Top": 509.0,
+                                "Height": 14.0,
+                                "Width": 83.0
+                            }
+                        ],
+                        "MaxHeight": 20.0,
+                        "MinTop": 503.0
+                    }
+                ],
+                "HasOverlay": true,
+                "Message": "Total lines: 21"
+            },
+            "TextOrientation": "0",
+            "FileParseExitCode": 1,
+            "ParsedText": "Перекус/десерт\r\nИнгредиенты:\r\nдля пудинд\r\n160 г миндального молока\r\n160 г кокосового молока\r\n40 г семян чиа\r\nДля кдубничного соуса:\r\n100 г свежемороженой\r\nклубники\r\n5 г мяты\r\n15 г сиропа топинамбура\r\nРВЦИОН УСЛОВИЯ\r\nЧиа-пудинг с ягодами\r\nСмешать оба вида молока и добавить семена чиа. Пере-\r\nмешивать около 5 минут. Затем дать настояться около часа\r\nв холодильнике.\r\nКлубнику выложить в чашу блендера, добавить мяту и си-\r\nроп и взбить до однородности. Можно брать разные ягоды.\r\nВ креманку, банку или стакан выложить клубничный мусс.\r\nСледом выложить пудинг.\r\nМожно украсить ягодами или фруктами по желанию,\r\n",
+            "ErrorMessage": "",
+            "ErrorDetails": ""
+        }
+    ],
+    "OCRExitCode": 1,
+    "IsErroredOnProcessing": false,
+    "ProcessingTimeInMilliseconds": "1578",
+    "SearchablePDFURL": "Searchable PDF not generated as it was not requested.",
+    "ErrorMessage": "New error in the image"
+}

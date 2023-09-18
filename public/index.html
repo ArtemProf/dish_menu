@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="jquery-3.7.0.min.js"></script>
+<script>
+    window.MenuParser = function () {
+        const _ = this;
+        _.menu = {
+            'categories': [],
+            'dishes': [],
+            'ingredients': [],
+            'ingredient_groups': {
+                'Основной': {
+                    id: 1,
+                    title: 'Основной',
+                    is_hidden: true
+                }
+            },
+            'products': {},
+            'product_groups': [
+                {
+                    id: 1,
+                    title: 'Другое',
+                }
+            ],
+        };
+
+        _.getJsonProducts('products.json');
+        _.getJsonMenu('menu.json');
+    }
+
+    MenuParser.prototype.addCategory = function (categoryName, parentId = 0) {
+        const _ = this;
+        const sectionId = _.getNextCategoryId();
+        _.menu.categories.push({
+            'id': sectionId,
+            'parent_id': parentId ? parentId : 0,
+            'title': categoryName.trim()
+        });
+
+        return sectionId;
+    }
+
+    MenuParser.prototype.addDish = function (dishAttrs, categoryId) {
+        const _ = this;
+        const dishId = _.getNextDishId();
+        const dish = _.fillDish(dishAttrs, dishId, categoryId);
+
+        _.menu.dishes.push(dish);
+
+        return dishId;
+    }
+
+    MenuParser.prototype.fillDish = function (dishAttrs, dishId, categoryId) {
+        let dish = {
+            'id': dishId,
+            'dish_category_id': categoryId,
+        };
+        const list = ['title', 'tag', 'image', 'description', 'exclaim'];
+        let key;
+        for (const dishKey in list) {
+            key = list[dishKey];
+            if (typeof dishAttrs[key] == 'undefined') {
+                throw new Error('Dish attribute doesnt exists: ' + key);
+            }
+            dish[key] = dishAttrs[key];
+        }
+
+        dish.video = dishAttrs.video ?? '';
+        dish.nutritional_value = dishAttrs.proteins;
+
+        return dish;
+    }
+
+    MenuParser.prototype.createFillIngredient = function (ingredientAttrs, ingredientId, dishId, ingredientGroupId) {
+        const _ = this;
+
+        let ingredient = {
+            'id': ingredientId,
+            'dish_id': dishId,
+            'ingredient_group_id': ingredientGroupId,
+        };
+
+        ingredient = _.addIngredientModel(ingredient, ingredientAttrs);
+
+        let key;
+        const list = ['title', 'amount', 'comment', 'amount_soc', 'amount_origin', 'not_required']
+        for (const dishKey in list) {
+            key = list[dishKey];
+            if (typeof ingredientAttrs[key] == 'undefined') {
+                throw new Error('Dish attribute doesnt exists: ' + key);
+            }
+            ingredient[key] = ingredientAttrs[key];
+        }
+
+        return ingredient;
+    }
+
+    MenuParser.prototype.addIngredientModel = function (ingredient, ingredientAttrs) {
+        const _ = this;
+
+        let modelId = _.getProductId(ingredientAttrs.title);
+        modelId = parseInt(modelId);
+
+        let model = 'product', match = [...ingredientAttrs.amount_origin.matchAll(/\(см[.]? "(.*?)"\)/g)];
+        if (match.length > 0) {
+            let sectionType = match[0][1];
+            if (sectionType.indexOf('вопрос') > -1) {
+                model = 'article';
+            } else {
+                modelId = sectionType.trim();
+                model = 'dish';
+            }
+        }
+
+        ingredient.type = model;
+        ingredient.type_id =  modelId;
+
+        return ingredient;
+    }
+
+    MenuParser.prototype.getProductId = function (ingredientAttrTitle) {
+        const _ = this;
+
+        let index, product;
+        let intersect, intersects = [], intersectMax = 0;
+        let ingredientTitleParts = ingredientAttrTitle.split(' ');
+
+        for (const productsKey in _.menu.products) {
+            product = _.menu.products[productsKey];
+            index = 0;
+            intersect = product.parts.filter(function(part, key) {
+                if (ingredientTitleParts.indexOf(part) !== -1) {
+                    index += 100 - parseInt(key);
+                    return true;
+                }
+                return false;
+            });
+
+            if (!intersect.length) {
+                continue;
+            }
+            if (!intersectMax || intersectMax <= index) {
+                if (intersectMax < index) {
+                    intersects = [];
+                }
+                intersectMax = index;
+                product.parts = product.parts.sort();
+                intersects.push({product_id: product.id, parts: intersect, product: product, index: index});
+            }
+        }
+
+        console.log(intersects);
+        if (intersects.length === 1) {
+            return intersects.pop().product_id;
+        }
+
+        if (intersects.length > 1) {
+            let filteredIntersectsByIndex = intersects.reverse().filter((intersect) => intersect.index >= intersectMax);
+
+            let equalsIntersects = _.comparePartsByLetters(filteredIntersectsByIndex, ingredientTitleParts);
+
+            if (equalsIntersects.length === 1) {
+                return equalsIntersects.pop().product_id;
+            }
+
+            return -1;
+        }
+
+        product = _.comparePartsWithProductsByLetters(ingredientTitleParts);
+
+        if (product.length > 1) {
+                return -1;
+        }
+
+        return product.id;
+    }
+
+    MenuParser.prototype.comparePartsByLetters = function (filteredIntersectsByIndex, ingredientTitleParts) {
+        const _ = this;
+
+        let ingredientTitlePart, intersectPart, partIndex, maxIntersectIndex = 0;
+        let equalsPartsIntersects = filteredIntersectsByIndex.map((intersect) => {
+            intersect.intersectIndex = 0;
+
+            let ingredientTitlePartsLength = ingredientTitleParts.length;
+            for (const partsKey in intersect.product.parts) {
+                intersectPart = intersect.product.parts[partsKey];
+
+                for (const ingredientTitlePartsKey in ingredientTitleParts) {
+                    ingredientTitlePart = ingredientTitleParts[ingredientTitlePartsKey];
+
+                    partIndex = _.calcCompareWordIndex(ingredientTitlePart, intersectPart);
+
+                    if (partIndex < 4) {
+                        continue;
+                    }
+                    intersect.intersectIndex += partIndex * (ingredientTitlePartsLength - parseInt(ingredientTitlePartsKey));
+                }
+            }
+
+            if (intersect.intersectIndex > 0) {
+                intersect.intersectIndex /= intersect.product.title.length + ingredientTitleParts.join(' ').length;
+
+                if (!maxIntersectIndex || maxIntersectIndex < intersect.intersectIndex) {
+                    maxIntersectIndex = intersect.intersectIndex;
+                }
+            }
+            return intersect;
+        })
+
+        let filteredEqualedPartsIntersectsByIntersectIndex = equalsPartsIntersects.filter((intersect) => intersect.intersectIndex >= maxIntersectIndex);
+
+        if (filteredEqualedPartsIntersectsByIntersectIndex.length === 1) {
+            return filteredEqualedPartsIntersectsByIntersectIndex;
+        }
+
+        return filteredEqualedPartsIntersectsByIntersectIndex.filter((intersect) => intersect.parts.length === intersect.product.parts.length);
+    }
+
+    MenuParser.prototype.comparePartsWithProductsByLetters = function (ingredientTitleParts) {
+        const _ = this;
+
+        let ingredientTitlePart, intersectPart, partIndex, maxIntersectIndex = 0;
+        let equalsPartsIntersects = _.menu.products.map((product) => {
+            product.intersectIndex = 0;
+
+            let ingredientTitlePartsLength = ingredientTitleParts.length;
+            for (const partsKey in product.parts) {
+                intersectPart = product.parts[partsKey];
+
+                for (const ingredientTitlePartsKey in ingredientTitleParts) {
+                    ingredientTitlePart = ingredientTitleParts[ingredientTitlePartsKey];
+
+                    partIndex = _.calcCompareWordIndex(ingredientTitlePart, intersectPart);
+
+                    if (partIndex < 4) {
+                        continue;
+                    }
+                    product.intersectIndex += partIndex * (ingredientTitlePartsLength - parseInt(ingredientTitlePartsKey));
+                }
+            }
+            if (product.intersectIndex > 0) {
+                product.intersectIndex /= product.title.length + ingredientTitleParts.join(' ').length;
+
+                if (!maxIntersectIndex || maxIntersectIndex < product.intersectIndex) {
+                    maxIntersectIndex = product.intersectIndex;
+                }
+            }
+            return product;
+        })
+
+        let filteredEqualedPartsIntersectsByIntersectIndex = equalsPartsIntersects.filter((intersect) => intersect.intersectIndex >= maxIntersectIndex);
+
+        if (filteredEqualedPartsIntersectsByIntersectIndex.length === 1) {
+            return filteredEqualedPartsIntersectsByIntersectIndex;
+        }
+
+        return filteredEqualedPartsIntersectsByIntersectIndex.filter((product) => product.parts.length === product.parts.length);
+    }
+
+    MenuParser.prototype.calcCompareWordIndex = function (ingredientTitlePart, intersectPart) {
+        let minLen = Math.min(ingredientTitlePart.length, ingredientTitlePart.length);
+        let partIndex = 0;
+        for (let i = 0; i < minLen; i++) {
+            if (ingredientTitlePart.substring(i, 1) === intersectPart.substring(i, 1)) {
+                partIndex += i + 1;
+                continue;
+            }
+            break;
+        }
+
+        return partIndex;
+    }
+
+    MenuParser.prototype.addIngredient = function (attrs, dishId, ingredientGroupId) {
+        const _ = this;
+        const ingredientId = _.getNextIngredientId();
+
+        const ingredient = _.createFillIngredient(attrs, ingredientId, dishId, ingredientGroupId);
+        _.menu.ingredients.push(ingredient);
+
+        return ingredientId;
+    }
+
+    MenuParser.prototype.getNextCategoryId = function () {
+        const _ = this;
+        return _.menu.categories.length + 1;
+    }
+
+    MenuParser.prototype.getNextDishId = function () {
+        const _ = this;
+        return _.menu.dishes.length + 1;
+    }
+
+    MenuParser.prototype.getNextIngredientGroupId = function () {
+        const _ = this;
+        return Object.values(_.menu.ingredient_groups).length + 1;
+    }
+
+    MenuParser.prototype.getNextIngredientId = function () {
+        const _ = this;
+        return _.menu.ingredients.length + 1;
+    }
+
+    MenuParser.prototype.parseIngredient = function (ingredient) {
+        const _ = this;
+
+        if (ingredient.indexOf('ингредиенты') > -1) {
+            ingredient = ingredient.replace('ингредиенты:', '');
+            return null;
+        }
+
+        ingredient = ingredient.replace(['"', ':'], ['', '']);
+
+        let amount = '', amount_soc = '', title = '', not_required = false, comment = '', start;
+        let matchTail = [...ingredient.matchAll(/[\(~½\d]/g)];
+
+        let bracketIndex = ingredient.indexOf('(');
+
+        //parse amount
+        let matchAmount = [...ingredient.matchAll(/([½+\d\/,\.]+)[\s]?([а-я\.]*[\s]?[а-я\.]*)/g)];
+        if (matchAmount[0] && matchAmount[0].hasOwnProperty(1)) {
+            amount = matchAmount[0][1];
+        }
+        if (matchAmount[0] && matchAmount[0].hasOwnProperty(2)) {
+            amount_soc = matchAmount[0][2];
+        }
+        amount = amount.replace(',', '.').trim();
+
+        if (matchTail && matchTail.hasOwnProperty(0)) {
+            start = bracketIndex > -1 && bracketIndex < matchTail[0].index ? bracketIndex : matchTail[0].index;
+            title = ingredient.substr(0, start - 1);
+        } else {
+            let ingredientFound = null;
+            for (let i = 0; i < _.menu.ingredients.length; i++) {
+                if (ingredient.indexOf(_.menu.ingredients[i].title) > -1) {
+                    ingredientFound = _.menu.ingredients[i];
+                    break;
+                }
+            }
+
+            title = ingredientFound ? ingredientFound.title : ingredient;
+            amount = ingredientFound ? ingredientFound.amount : 1;
+            amount_soc = ingredientFound ? ingredientFound.amount_soc : '';
+        }
+
+        if (ingredient.indexOf('по вкусу') > -1) {
+            amount = 1;
+            amount_soc = 'по вкусу';
+        }
+        if (ingredient.indexOf('по желанию') > -1) {
+            amount = 1;
+            amount_soc = 'по желанию';
+            not_required = true;
+        }
+        if (ingredient.indexOf('щепотка') > -1) {
+            amount = 1;
+            amount_soc = 'щепотка';
+        }
+        if (ingredient.indexOf('пучок') > -1) {
+            amount = 1;
+            amount_soc = 'пучок';
+        }
+        if (ingredient.indexOf('необязательно') > -1) {
+            not_required = true;
+        }
+
+        if (amount === '½') {
+            amount = '0.5';
+        }
+        if (amount === '¾') {
+            amount = '0.75';
+        }
+        if (amount === '1+½') {
+            amount = '1.5';
+        }
+
+        if (ingredient.indexOf('(') > -1) {
+            match = [...ingredient.matchAll(/\((.*?)\)/g)];
+            console.log('!!' + ingredient, match);
+
+            if (match && match.hasOwnProperty(0)) {
+                comment = match[0][1];
+            }
+        }
+
+        if (!amount) {
+            amount = 0;
+        }
+
+        // attrs = ingredient.indexOf('(');
+        // attrs = ingredient.indexOf('см');
+        // attrs = ingredient.indexOf('или');
+        // attrs = ingredient.indexOf('необязательно');
+        // console.log(attrs);
+        return {
+            'title': title.trim(),
+            'comment': comment,
+            'amount': amount ? parseFloat(amount) : 0,
+            'amount_soc': amount_soc ? amount_soc.trim() : '',
+            'amount_origin': ingredient.trim(),
+            'not_required': not_required,
+        };
+    }
+
+    MenuParser.prototype.processJson = function () {
+        const _ = this;
+
+        _.addCategoriesDishesIngredients();
+
+        _.rebuildIngredientDishesToIds();
+
+        //_.collectProductsFromIngredients();
+        _.menu.ingredient_groups = Object.values(_.menu.ingredient_groups);
+
+        _.savingAsJsonFile(_.menu, ['categories', 'dishes', 'ingredients', 'ingredient_groups', 'products', 'product_groups']);
+
+        window.menu = _.menu;
+    }
+
+    MenuParser.prototype.rebuildIngredientDishesToIds = function () {
+        const _ = this;
+        let ingredient;
+        let category, dish;
+
+        for (const ingredientsKey in _.menu.ingredients) {
+            ingredient = _.menu.ingredients[ingredientsKey];
+            if (ingredient.type !== 'dish') {
+                continue;
+            }
+
+            for (const categoryKey in _.menu.categories) {
+                category = _.menu.categories[categoryKey];
+                if (category.title === ingredient.type_id) {
+                    ingredient.type_id = parseInt(category.id);
+                    ingredient.type = 'dish_category';
+                    break;
+                }
+            }
+        }
+    }
+
+    MenuParser.prototype.addCategoriesDishesIngredients = function () {
+        const _ = this;
+
+        let sectionId, categoryId, dishId, dish, ingredient;
+        let ingredientAttrs, ingredientGroupPos, ingredientGroupId;
+
+        for (const sectionName in _.json) {
+            sectionId = _.addCategory(sectionName);
+
+            for (const categoryName in _.json[sectionName]) {
+                categoryId = _.addCategory(categoryName, sectionId);
+
+                for (const dishKey in _.json[sectionName][categoryName]) {
+                    dish = _.json[sectionName][categoryName][dishKey];
+                    dishId = _.addDish(dish, categoryId);
+
+                    ingredientGroupId = 1;
+                    for (const ingredientKey in dish.ingredients) {
+                        ingredient = dish.ingredients[ingredientKey]
+
+                        ingredientAttrs = _.parseIngredient(ingredient);
+                        if (!ingredientAttrs) {
+                            console.log('Dish doesnt have ingredients: ' + JSON.stringify(dish));
+                            continue;
+                        }
+                        console.log(ingredient, ingredientAttrs);
+
+                        ingredientGroupPos = ingredient.indexOf('для');
+                        if (ingredientGroupPos > -1) {
+                            [ingredientGroupId, ingredient] = _.addIngredientGroup(ingredient);
+                        }
+                        _.addIngredient(ingredientAttrs, dishId, ingredientGroupId);
+                    }
+                }
+            }
+        }
+    }
+
+    MenuParser.prototype.savingAsJsonFile = function (data, propName) {
+        const _ = this;
+
+        if (typeof propName != 'string') {
+
+            for (const propNameKey in propName) {
+                _.savingAsJsonFile(data, propName[propNameKey]);
+            }
+
+            console.log(typeof propName);
+            return;
+        }
+
+        data = typeof propName == 'undefined' ? data : data[propName];
+
+        let json = JSON.stringify( data );
+        json = JSON.stringify( data );
+        const file = new Blob([json], {type: "application/json"});
+
+        var a = document.createElement("a"),
+            url = URL.createObjectURL(file);
+        a.href = url;
+        a.download = propName ?? 'menu' + '.json';
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(function() {
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }, 0);
+    }
+
+    MenuParser.prototype.addIngredientGroup = function (ingredientSrc) {
+        const  _ = this;
+        const match = [...ingredientSrc.matchAll(/(.*?)для (.*?):/g)];
+        if (match.length === 0) {
+            return [1, ingredientSrc];
+        }
+
+        console.log(match);
+        const title = match[0][2];
+        const ingredient = match[0][1];
+
+        let ingredientGroupId = null;
+        let ingredientGroup = _.menu.ingredient_groups[title];
+        if (typeof ingredientGroup === 'undefined') {
+            ingredientGroupId = _.getNextIngredientGroupId();
+            _.menu.ingredient_groups[title] = {
+                id: ingredientGroupId,
+                title: title,
+                is_hidden: false
+            };
+        } else {
+            ingredientGroupId = ingredientGroup.id;
+        }
+
+        return [ingredientGroupId, ingredient];
+    }
+
+    MenuParser.prototype.getProductId_old = function (title) {
+        const _ = this;
+        let product, found = {}, part;
+
+        for (const productsKey in _.menu.products) {
+            product = _.menu.products[productsKey];
+            for (const productPartsKey in product.parts) {
+                part = product.parts[productPartsKey];
+
+                if (title.indexOf(part) > -1) {
+                    if (typeof found[product.id] == 'undefined') {
+                        found[product.id] = 0;
+                    }
+                    found[product.id]++;
+                }
+            }
+        }
+        let keys = Object.keys(found);
+        if (!keys.length) {
+            return 0;
+        }
+
+        if (keys.length === 1) {
+            return keys.pop();
+        }
+
+        let foundMax = Math.max(...Object.values(found));
+
+        let foundIndex = Object.values(found).indexOf(foundMax)
+
+        return keys[foundIndex];
+    }
+
+    MenuParser.prototype.collectProductsFromIngredients = function () {
+        const _ = this;
+        if (_.menu.products) {
+            Object.keys(_.menu.ingredients)
+                .sort()
+                .forEach((c) => { //remove duplicates
+                    if (!_.menu.products.includes(c)) {
+                        _.menu.products.push(c);
+                    }
+                });
+
+            _.savingAsJsonFile(_.menu, 'products');
+        }
+    }
+
+    MenuParser.prototype.getJsonProducts = function (filename) {
+        let _ = this;
+        $.getJSON(filename, function (json) {
+            _.menu.products = json;
+            console.log(typeof _.menu.products[0]);
+            if (_.menu.products && typeof _.menu.products[0] === 'string') {
+                _.sortProducts();
+                _.removeDuplicates();
+                _.moveNounFirst();
+                _.removeDuplicates();
+                _.sortProducts();
+                _.splitProductKeys();
+                _.addProductIds();
+            }
+            console.log('products', JSON.stringify(_.menu.products));
+        });
+    }
+
+    MenuParser.prototype.splitProductKeys = function () {
+        const _ = this;
+        let product;
+
+        for (const productsKey in _.menu.products) {
+            product = _.menu.products[productsKey];
+            _.menu.products[productsKey].parts = product.title.split(' ');
+        }
+    }
+
+    MenuParser.prototype.addProductIds = function () {
+        let _ = this;
+
+        let list = _.menu.products, id = 1;
+        _.menu.products = [];
+
+        return list.forEach((product) => {
+            _.menu.products.push({id: id++, title: product});
+        });
+    }
+
+    MenuParser.prototype.sortProducts = function () {
+        this.menu.products = this.menu.products.sort();
+    }
+
+    MenuParser.prototype.moveNounFirst = function () {
+        let _ = this, words, wordEnding;
+
+        let list = _.menu.products;
+        _.menu.products = [];
+        return list.forEach((product) => {
+            if (product.indexOf(' ') === -1) {
+                _.menu.products.push(product);
+                return;
+            }
+            words = product.split(' ');
+            wordEnding = words[0].substr(-2);
+            if (words.length !== 2 || ['ое', 'ая', 'ые', 'ый', 'ий', 'ой'].indexOf(wordEnding) === -1) {
+                _.menu.products.push(product);
+                return;
+            }
+
+            _.menu.products.push(words.reverse().join(' '));
+        });
+    }
+
+    MenuParser.prototype.removeDuplicates = function () {
+        let _ = this;
+
+        let list = _.menu.products;
+        _.menu.products = [];
+        return list.forEach((c) => { //remove duplicates
+            if (!_.menu.products.includes(c)) {
+                _.menu.products.push(c);
+            }
+        });
+    }
+
+    MenuParser.prototype.getJsonMenu = function (filename) {
+        let _ = this;
+        $.getJSON(filename, function (json) {
+            _.json = json;
+            _.processJson();
+        });
+    }
+
+    new MenuParser();
+</script>
+</body>
+</html>

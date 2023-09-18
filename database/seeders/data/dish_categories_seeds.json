@@ -1,0 +1,187 @@
+[
+  {
+    "id": 1,
+    "parent_id": 0,
+    "title": "НеМолочка"
+  },
+  {
+    "id": 2,
+    "parent_id": 1,
+    "title": "Глазированные сырки"
+  },
+  {
+    "id": 3,
+    "parent_id": 1,
+    "title": "Творог"
+  },
+  {
+    "id": 4,
+    "parent_id": 1,
+    "title": "Сыры"
+  },
+  {
+    "id": 5,
+    "parent_id": 1,
+    "title": "Йогурты"
+  },
+  {
+    "id": 6,
+    "parent_id": 1,
+    "title": "Молоко"
+  },
+  {
+    "id": 7,
+    "parent_id": 1,
+    "title": "Масло"
+  },
+  {
+    "id": 8,
+    "parent_id": 1,
+    "title": "Блюда на основе НеМолочки"
+  },
+  {
+    "id": 9,
+    "parent_id": 0,
+    "title": "Хлебобулочные"
+  },
+  {
+    "id": 10,
+    "parent_id": 9,
+    "title": "Хлеб"
+  },
+  {
+    "id": 11,
+    "parent_id": 9,
+    "title": "Пицца"
+  },
+  {
+    "id": 12,
+    "parent_id": 9,
+    "title": "Печенье"
+  },
+  {
+    "id": 13,
+    "parent_id": 9,
+    "title": "Блинчики/оладушки"
+  },
+  {
+    "id": 14,
+    "parent_id": 9,
+    "title": "Кексы"
+  },
+  {
+    "id": 15,
+    "parent_id": 9,
+    "title": "Пироги"
+  },
+  {
+    "id": 16,
+    "parent_id": 9,
+    "title": "Вафли"
+  },
+  {
+    "id": 17,
+    "parent_id": 0,
+    "title": "Десерты"
+  },
+  {
+    "id": 18,
+    "parent_id": 17,
+    "title": "Шоколад"
+  },
+  {
+    "id": 19,
+    "parent_id": 17,
+    "title": "Батончики"
+  },
+  {
+    "id": 20,
+    "parent_id": 17,
+    "title": "Конфеты"
+  },
+  {
+    "id": 21,
+    "parent_id": 17,
+    "title": "Торты/пирожные"
+  },
+  {
+    "id": 22,
+    "parent_id": 17,
+    "title": "Мороженое"
+  },
+  {
+    "id": 23,
+    "parent_id": 0,
+    "title": "Основные блюда"
+  },
+  {
+    "id": 24,
+    "parent_id": 23,
+    "title": "Супы"
+  },
+  {
+    "id": 25,
+    "parent_id": 23,
+    "title": "Пасты"
+  },
+  {
+    "id": 26,
+    "parent_id": 23,
+    "title": "Каши"
+  },
+  {
+    "id": 27,
+    "parent_id": 23,
+    "title": "Сырники"
+  },
+  {
+    "id": 28,
+    "parent_id": 23,
+    "title": "Салаты"
+  },
+  {
+    "id": 29,
+    "parent_id": 23,
+    "title": "Другое"
+  },
+  {
+    "id": 30,
+    "parent_id": 0,
+    "title": "Соусы"
+  },
+  {
+    "id": 31,
+    "parent_id": 30,
+    "title": "К десертам"
+  },
+  {
+    "id": 32,
+    "parent_id": 30,
+    "title": "К основным блюдам"
+  },
+  {
+    "id": 33,
+    "parent_id": 0,
+    "title": "Рецепты free"
+  },
+  {
+    "id": 34,
+    "parent_id": 33,
+    "title": "Печенье"
+  },
+  {
+    "id": 35,
+    "parent_id": 33,
+    "title": "Пасхальные куличи"
+  },
+  {
+    "id": 36,
+    "parent_id": 33,
+    "title": "Пасха"
+  },
+  {
+    "id": 37,
+    "parent_id": 33,
+    "title": "Икра черная"
+  }
+]

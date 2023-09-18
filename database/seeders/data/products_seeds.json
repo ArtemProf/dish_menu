@@ -1,0 +1,1787 @@
+[
+    {
+        "id": 1,
+        "title": "авокадо",
+        "parts": [
+            "авокадо"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 2,
+        "title": "агар-агар",
+        "parts": [
+            "агар-агар"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 3,
+        "title": "аквафаба",
+        "parts": [
+            "аквафаба"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 4,
+        "title": "амарант",
+        "parts": [
+            "амарант"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 5,
+        "title": "арахис",
+        "parts": [
+            "арахис"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 6,
+        "title": "арахис соленый",
+        "parts": [
+            "арахис",
+            "соленый"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 7,
+        "title": "базилик",
+        "parts": [
+            "базилик"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 8,
+        "title": "базилик сушеный",
+        "parts": [
+            "базилик",
+            "сушеный"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 9,
+        "title": "баклажан",
+        "parts": [
+            "баклажан"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 10,
+        "title": "банан",
+        "parts": [
+            "банан"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 11,
+        "title": "батат",
+        "parts": [
+            "батат"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 12,
+        "title": "брусника",
+        "parts": [
+            "брусника"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 13,
+        "title": "бульон овощной",
+        "parts": [
+            "бульон",
+            "овощной"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 14,
+        "title": "буханка хлеба",
+        "parts": [
+            "буханка",
+            "хлеба"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 15,
+        "title": "вишня",
+        "parts": [
+            "вишня"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 16,
+        "title": "вода",
+        "parts": [
+            "вода"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 17,
+        "title": "вода теплая",
+        "parts": [
+            "вода",
+            "теплая"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 18,
+        "title": "вода холодная",
+        "parts": [
+            "вода",
+            "холодная"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 19,
+        "title": "ганаш шоколадный",
+        "parts": [
+            "ганаш",
+            "шоколадный"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 20,
+        "title": "гвоздика",
+        "parts": [
+            "гвоздика"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 21,
+        "title": "геркулес",
+        "parts": [
+            "геркулес"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 22,
+        "title": "горошек зеленый",
+        "parts": [
+            "горошек",
+            "зеленый"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 23,
+        "title": "гречка зеленая",
+        "parts": [
+            "гречка",
+            "зеленая"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 24,
+        "title": "дрожжи пищевые",
+        "parts": [
+            "дрожжи",
+            "пищевые"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 25,
+        "title": "ежевика",
+        "parts": [
+            "ежевика"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 26,
+        "title": "жмых миндальный",
+        "parts": [
+            "жмых",
+            "миндальный"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 27,
+        "title": "изюм",
+        "parts": [
+            "изюм"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 28,
+        "title": "имбирь",
+        "parts": [
+            "имбирь"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 29,
+        "title": "йогурт",
+        "parts": [
+            "йогурт"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 30,
+        "title": "йогурт кокосовый",
+        "parts": [
+            "йогурт",
+            "кокосовый"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 31,
+        "title": "йогурт миндальный",
+        "parts": [
+            "йогурт",
+            "миндальный"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 32,
+        "title": "йогурт натуральный любой",
+        "parts": [
+            "йогурт",
+            "натуральный",
+            "любой"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 33,
+        "title": "йогурт растительный",
+        "parts": [
+            "йогурт",
+            "растительный"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 34,
+        "title": "кабачок",
+        "parts": [
+            "кабачок"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 35,
+        "title": "какао",
+        "parts": [
+            "какао"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 36,
+        "title": "капуста цветная",
+        "parts": [
+            "капуста",
+            "цветная"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 37,
+        "title": "карамель",
+        "parts": [
+            "карамель"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 38,
+        "title": "карамель кокосовая",
+        "parts": [
+            "карамель",
+            "кокосовая"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 39,
+        "title": "кардамон",
+        "parts": [
+            "кардамон"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 40,
+        "title": "картофель",
+        "parts": [
+            "картофель"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 41,
+        "title": "кешью",
+        "parts": [
+            "кешью"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 42,
+        "title": "кинза",
+        "parts": [
+            "кинза"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 43,
+        "title": "киноа",
+        "parts": [
+            "киноа"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 44,
+        "title": "клубника",
+        "parts": [
+            "клубника"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 45,
+        "title": "клюква",
+        "parts": [
+            "клюква"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 46,
+        "title": "кориандр",
+        "parts": [
+            "кориандр"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 47,
+        "title": "корица",
+        "parts": [
+            "корица"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 48,
+        "title": "крахмал кукурузный",
+        "parts": [
+            "крахмал",
+            "кукурузный"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 49,
+        "title": "крахмал тапиоки",
+        "parts": [
+            "крахмал",
+            "тапиоки"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 50,
+        "title": "кумин",
+        "parts": [
+            "кумин"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 51,
+        "title": "кунжут",
+        "parts": [
+            "кунжут"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 52,
+        "title": "кунжут черный",
+        "parts": [
+            "кунжут",
+            "черный"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 53,
+        "title": "куркума",
+        "parts": [
+            "куркума"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 54,
+        "title": "лайм",
+        "parts": [
+            "лайм"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 55,
+        "title": "лен",
+        "parts": [
+            "лен"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 56,
+        "title": "лепестки миндаля",
+        "parts": [
+            "лепестки",
+            "миндаля"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 57,
+        "title": "лимон",
+        "parts": [
+            "лимон"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 58,
+        "title": "лук",
+        "parts": [
+            "лук"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 59,
+        "title": "лук белый",
+        "parts": [
+            "лук",
+            "белый"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 60,
+        "title": "лук зеленый",
+        "parts": [
+            "лук",
+            "зеленый"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 61,
+        "title": "лук красный",
+        "parts": [
+            "лук",
+            "красный"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 62,
+        "title": "малина",
+        "parts": [
+            "малина"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 63,
+        "title": "манго",
+        "parts": [
+            "манго"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 64,
+        "title": "манна кокосовая",
+        "parts": [
+            "манна",
+            "кокосовая"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 65,
+        "title": "масло ГХИ",
+        "parts": [
+            "масло",
+            "ГХИ"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 66,
+        "title": "масло авокадо",
+        "parts": [
+            "масло",
+            "авокадо"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 67,
+        "title": "масло какао",
+        "parts": [
+            "масло",
+            "какао"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 68,
+        "title": "масло кокосовое",
+        "parts": [
+            "масло",
+            "кокосовое"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 69,
+        "title": "масло кунжутное",
+        "parts": [
+            "масло",
+            "кунжутное"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 70,
+        "title": "масло льняное",
+        "parts": [
+            "масло",
+            "льняное"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 71,
+        "title": "масло оливковое",
+        "parts": [
+            "масло",
+            "оливковое"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 72,
+        "title": "масло растительное",
+        "parts": [
+            "масло",
+            "растительное"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 73,
+        "title": "масло сливочное",
+        "parts": [
+            "масло",
+            "сливочное"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 74,
+        "title": "миндаль",
+        "parts": [
+            "миндаль"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 75,
+        "title": "молоко кокосовое",
+        "parts": [
+            "молоко",
+            "кокосовое"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 76,
+        "title": "молоко миндальное",
+        "parts": [
+            "молоко",
+            "миндальное"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 77,
+        "title": "молоко овсяное",
+        "parts": [
+            "молоко",
+            "овсяное"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 78,
+        "title": "молоко растительное",
+        "parts": [
+            "молоко",
+            "растительное"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 79,
+        "title": "молоко соевое",
+        "parts": [
+            "молоко",
+            "соевое"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 80,
+        "title": "морковь",
+        "parts": [
+            "морковь"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 81,
+        "title": "моцарелла ореховая",
+        "parts": [
+            "моцарелла",
+            "ореховая"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 82,
+        "title": "мука без глютена",
+        "parts": [
+            "мука",
+            "без",
+            "глютена"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 83,
+        "title": "мука бурого риса",
+        "parts": [
+            "мука",
+            "бурого",
+            "риса"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 84,
+        "title": "мука зеленой гречки",
+        "parts": [
+            "мука",
+            "зеленой",
+            "гречки"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 85,
+        "title": "мука киноа",
+        "parts": [
+            "мука",
+            "киноа"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 86,
+        "title": "мука кокосовая",
+        "parts": [
+            "мука",
+            "кокосовая"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 87,
+        "title": "мука миндальная",
+        "parts": [
+            "мука",
+            "миндальная"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 88,
+        "title": "мука нутовая",
+        "parts": [
+            "мука",
+            "нутовая"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 89,
+        "title": "мука овсяная",
+        "parts": [
+            "мука",
+            "овсяная"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 90,
+        "title": "мука рисовая",
+        "parts": [
+            "мука",
+            "рисовая"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 91,
+        "title": "мука цельнозерновая",
+        "parts": [
+            "мука",
+            "цельнозерновая"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 92,
+        "title": "мягкий кешью сыр",
+        "parts": [
+            "мягкий",
+            "кешью",
+            "сыр"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 93,
+        "title": "нори",
+        "parts": [
+            "нори"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 94,
+        "title": "нут",
+        "parts": [
+            "нут"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 95,
+        "title": "нут консервированный",
+        "parts": [
+            "нут",
+            "консервированный"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 96,
+        "title": "нут отварной",
+        "parts": [
+            "нут",
+            "отварной"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 97,
+        "title": "овощи любые",
+        "parts": [
+            "овощи",
+            "любые"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 98,
+        "title": "овсянка",
+        "parts": [
+            "овсянка"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 99,
+        "title": "овсянка б/г",
+        "parts": [
+            "овсянка",
+            "б/г"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 100,
+        "title": "овсянка без глютена",
+        "parts": [
+            "овсянка",
+            "без",
+            "глютена"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 101,
+        "title": "огурец",
+        "parts": [
+            "огурец"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 102,
+        "title": "огурцы",
+        "parts": [
+            "огурцы"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 103,
+        "title": "орегано",
+        "parts": [
+            "орегано"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 104,
+        "title": "орех грецкий",
+        "parts": [
+            "орех",
+            "грецкий"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 105,
+        "title": "орех мускатный",
+        "parts": [
+            "орех",
+            "мускатный"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 106,
+        "title": "орехи",
+        "parts": [
+            "орехи"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 107,
+        "title": "орешки кедровые",
+        "parts": [
+            "орешки",
+            "кедровые"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 108,
+        "title": "паприка",
+        "parts": [
+            "паприка"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 109,
+        "title": "паприка копченая",
+        "parts": [
+            "паприка",
+            "копченая"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 110,
+        "title": "паста арахисовая",
+        "parts": [
+            "паста",
+            "арахисовая"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 111,
+        "title": "паста из кешью",
+        "parts": [
+            "паста",
+            "из",
+            "кешью"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 112,
+        "title": "паста из чечевицы",
+        "parts": [
+            "паста",
+            "из",
+            "чечевицы"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 113,
+        "title": "паста кокосовая",
+        "parts": [
+            "паста",
+            "кокосовая"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 114,
+        "title": "паста миндальная",
+        "parts": [
+            "паста",
+            "миндальная"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 115,
+        "title": "паста нутовая",
+        "parts": [
+            "паста",
+            "нутовая"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 116,
+        "title": "паста ореховая",
+        "parts": [
+            "паста",
+            "ореховая"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 117,
+        "title": "паста томатная",
+        "parts": [
+            "паста",
+            "томатная"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 118,
+        "title": "перец",
+        "parts": [
+            "перец"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 119,
+        "title": "перец кайенский",
+        "parts": [
+            "перец",
+            "кайенский"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 120,
+        "title": "перец черный",
+        "parts": [
+            "перец",
+            "черный"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 121,
+        "title": "перец чили",
+        "parts": [
+            "перец",
+            "чили"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 122,
+        "title": "перец чили хлопья",
+        "parts": [
+            "перец",
+            "чили",
+            "хлопья"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 123,
+        "title": "петрушка",
+        "parts": [
+            "петрушка"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 124,
+        "title": "порошок какао",
+        "parts": [
+            "порошок",
+            "какао"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 125,
+        "title": "порошок луковый",
+        "parts": [
+            "порошок",
+            "луковый"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 126,
+        "title": "порошок чесночный",
+        "parts": [
+            "порошок",
+            "чесночный"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 127,
+        "title": "пробиотики",
+        "parts": [
+            "пробиотики"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 128,
+        "title": "псиллиум",
+        "parts": [
+            "псиллиум"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 129,
+        "title": "пшенка отварная",
+        "parts": [
+            "пшенка",
+            "отварная"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 130,
+        "title": "пшено",
+        "parts": [
+            "пшено"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 131,
+        "title": "пюре банана",
+        "parts": [
+            "пюре",
+            "банана"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 132,
+        "title": "пюре тыквенное",
+        "parts": [
+            "пюре",
+            "тыквенное"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 133,
+        "title": "пюре яблочное",
+        "parts": [
+            "пюре",
+            "яблочное"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 134,
+        "title": "рикотта миндальная",
+        "parts": [
+            "рикотта",
+            "миндальная"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 135,
+        "title": "рис бурый",
+        "parts": [
+            "рис",
+            "бурый"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 136,
+        "title": "розмарин",
+        "parts": [
+            "розмарин"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 137,
+        "title": "розмарин сушеный",
+        "parts": [
+            "розмарин",
+            "сушеный"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 138,
+        "title": "руккола",
+        "parts": [
+            "руккола"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 139,
+        "title": "сахар кокосовый",
+        "parts": [
+            "сахар",
+            "кокосовый"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 140,
+        "title": "саше закваски",
+        "parts": [
+            "саше",
+            "закваски"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 141,
+        "title": "свекла",
+        "parts": [
+            "свекла"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 142,
+        "title": "семена",
+        "parts": [
+            "семена"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 143,
+        "title": "семена любые",
+        "parts": [
+            "семена",
+            "любые"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 144,
+        "title": "семена подсолнуха",
+        "parts": [
+            "семена",
+            "подсолнуха"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 145,
+        "title": "семена чиа",
+        "parts": [
+            "семена",
+            "чиа"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 146,
+        "title": "семечки тыквенные",
+        "parts": [
+            "семечки",
+            "тыквенные"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 147,
+        "title": "сироп по вкусу (если мангосладкое можно и без)",
+        "parts": [
+            "сироп",
+            "по",
+            "вкусу",
+            "(если",
+            "мангосладкое",
+            "можно",
+            "и",
+            "без)"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 148,
+        "title": "сироп топинамбура",
+        "parts": [
+            "сироп",
+            "топинамбура"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 149,
+        "title": "сироп цикория",
+        "parts": [
+            "сироп",
+            "цикория"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 150,
+        "title": "сливки кокосовые",
+        "parts": [
+            "сливки",
+            "кокосовые"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 151,
+        "title": "смесь безглютеновая",
+        "parts": [
+            "смесь",
+            "безглютеновая"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 152,
+        "title": "сода",
+        "parts": [
+            "сода"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 153,
+        "title": "сода пищевая",
+        "parts": [
+            "сода",
+            "пищевая"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 155,
+        "title": "апельсин",
+        "parts": [
+            "апельсин"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 158,
+        "title": "соль",
+        "parts": [
+            "соль"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 159,
+        "title": "соль морская",
+        "parts": [
+            "соль",
+            "морская"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 160,
+        "title": "соус соевый",
+        "parts": [
+            "соус",
+            "соевый"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 161,
+        "title": "спагетти безглютеновые",
+        "parts": [
+            "спагетти",
+            "безглютеновые"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 162,
+        "title": "стружка кокосовая",
+        "parts": [
+            "стружка",
+            "кокосовая"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 163,
+        "title": "сухие водоросли вакамэ",
+        "parts": [
+            "сухие",
+            "водоросли",
+            "вакамэ"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 164,
+        "title": "сухое овсяное молоко",
+        "parts": [
+            "сухое",
+            "овсяное",
+            "молоко"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 165,
+        "title": "сухой чеснок",
+        "parts": [
+            "сухой",
+            "чеснок"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 166,
+        "title": "сухофрукты",
+        "parts": [
+            "сухофрукты"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 167,
+        "title": "сушеный лук",
+        "parts": [
+            "сушеный",
+            "лук"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 169,
+        "title": "сыр",
+        "parts": [
+            "сыр"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 170,
+        "title": "сыр мягкий",
+        "parts": [
+            "сыр",
+            "мягкий"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 171,
+        "title": "сыр творожный",
+        "parts": [
+            "сыр",
+            "творожный"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 172,
+        "title": "тахини",
+        "parts": [
+            "тахини"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 173,
+        "title": "тимьян",
+        "parts": [
+            "тимьян"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 174,
+        "title": "тмин",
+        "parts": [
+            "тмин"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 175,
+        "title": "тмин молотый",
+        "parts": [
+            "тмин",
+            "молотый"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 176,
+        "title": "томат",
+        "parts": [
+            "томат"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 177,
+        "title": "томаты",
+        "parts": [
+            "томаты"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 178,
+        "title": "томаты вяленые",
+        "parts": [
+            "томаты",
+            "вяленые"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 179,
+        "title": "томаты протертые",
+        "parts": [
+            "томаты",
+            "протертые"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 180,
+        "title": "томаты сушеные",
+        "parts": [
+            "томаты",
+            "сушеные"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 181,
+        "title": "томаты черри",
+        "parts": [
+            "томаты",
+            "черри"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 183,
+        "title": "тофу",
+        "parts": [
+            "тофу"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 184,
+        "title": "укроп",
+        "parts": [
+            "укроп"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 185,
+        "title": "уксус яблочный",
+        "parts": [
+            "уксус",
+            "яблочный"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 186,
+        "title": "универсальная безглютеновая смесь",
+        "parts": [
+            "универсальная",
+            "безглютеновая",
+            "смесь"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 187,
+        "title": "урбеч из кешью",
+        "parts": [
+            "урбеч",
+            "из",
+            "кешью"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 188,
+        "title": "урбеч кокосовый",
+        "parts": [
+            "урбеч",
+            "кокосовый"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 189,
+        "title": "фасоль белая",
+        "parts": [
+            "фасоль",
+            "белая"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 190,
+        "title": "фасоль белая консервированная",
+        "parts": [
+            "фасоль",
+            "белая",
+            "консервированная"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 191,
+        "title": "финики",
+        "parts": [
+            "финики"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 192,
+        "title": "фундук",
+        "parts": [
+            "фундук"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 193,
+        "title": "цедра",
+        "parts": [
+            "цедра"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 194,
+        "title": "цедра апельсина",
+        "parts": [
+            "цедра",
+            "апельсина"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 195,
+        "title": "черная веган икра",
+        "parts": [
+            "черная",
+            "веган",
+            "икра"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 196,
+        "title": "чеснок",
+        "parts": [
+            "чеснок"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 197,
+        "title": "чеснок сушеный",
+        "parts": [
+            "чеснок",
+            "сушеный"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 198,
+        "title": "чечевица зеленая",
+        "parts": [
+            "чечевица",
+            "зеленая"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 199,
+        "title": "чечевица красная",
+        "parts": [
+            "чечевица",
+            "красная"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 200,
+        "title": "чиа",
+        "parts": [
+            "чиа"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 201,
+        "title": "чипсы кокосовые",
+        "parts": [
+            "чипсы",
+            "кокосовые"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 202,
+        "title": "шампиньоны",
+        "parts": [
+            "шампиньоны"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 203,
+        "title": "шоколад",
+        "parts": [
+            "шоколад"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 204,
+        "title": "шоколад темный",
+        "parts": [
+            "шоколад",
+            "темный"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 205,
+        "title": "шпинат",
+        "parts": [
+            "шпинат"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 206,
+        "title": "шпинат свежий",
+        "parts": [
+            "шпинат",
+            "свежий"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 207,
+        "title": "экстракт ванили",
+        "parts": [
+            "экстракт",
+            "ванили"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 208,
+        "title": "яблоки",
+        "parts": [
+            "яблоки"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 209,
+        "title": "ягоды",
+        "parts": [
+            "ягоды"
+        ],
+        "product_category_id": 1
+    },
+    {
+        "id": 210,
+        "title": "яйца",
+        "parts": [
+            "яйца"
+        ],
+        "product_category_id": 1
+    }
+]
